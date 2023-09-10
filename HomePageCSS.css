@@ -94,7 +94,7 @@ body {
 /* Resources Section */
 
 #resources {
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #f5f5f5;
     padding: 50px 0;
 }
 
@@ -139,8 +139,44 @@ body {
 /* Footer */
 
 footer {
-    background-color: #333; /* Dark gray background */
+    background-color: #333; 
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Box 1 */
+#box1 {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#box1 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#box1 p {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+/* Box 2 */
+#box2 {
+    background-color: #f5f5f5; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#box2 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#box2 p {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
 }
