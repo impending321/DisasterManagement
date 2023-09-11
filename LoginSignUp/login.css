@@ -1,6 +1,6 @@
 body{
     margin: 10vh 20vw;
-    background-color: #edf46a;
+    background-color: #fff;
 }
 
 .form-group{
@@ -12,4 +12,8 @@ body{
 }
 #signup{
     margin-left: 2vw;
+}
+.form-control{
+    background-color: #f5f5f5;
+    color: black;
 }
