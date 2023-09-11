@@ -1,0 +1,15 @@
+body{
+    margin: 10vh 20vw;
+    background-color: #edf46a;
+}
+
+.form-group{
+    margin: 1vw;
+}
+
+#login{
+    margin-left: 24vw;
+}
+#signup{
+    margin-left: 2vw;
+}
