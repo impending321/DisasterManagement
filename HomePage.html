@@ -152,7 +152,7 @@
             const lat = position.coords.latitude;
             const lon = position.coords.longitude;
             console.log(position.coords.latitude, position.coords.longitude);
-            const apiUrl= 'http://api.openweathermap.org/geo/1.0/reverse?lat=' + lat + '&lon=' + lon + '&limit='+0+'&appid=d00d86661cfbb10af358e0b5c23cec53'
+            const apiUrl= 'http://api.openweathermap.org/geo/1.0/reverse?lat=' + lat + '&lon=' + lon + '&limit='+0+'&appid='
             fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
