@@ -1,0 +1,53 @@
+
+.weather-container {
+    height: 700px;
+    width: 100%;
+    border-radius: 5px;
+    background-image: url("./images/white-cloud-blue-sky.jpg");
+    display: grid;
+    grid-template-rows: .25fr 2fr 1fr 1.5fr;
+    padding: 10px;
+    gap: 5px;
+}
+
+#location-input{
+    padding-left: 2%;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.weather-box {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.weather-2 {
+    padding: 5px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(10, 20%);
+    overflow-x: auto;
+    gap: 0px 5px;
+}
+
+.weather-2::-webkit-scrollbar {
+    width: 10px;
+}
+
+.weather-2::-webkit-scrollbar-track {
+    background: white;
+}
+
+.weather-2::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.weather-2::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.hour-forcast {
+    border: 1px solid black;
+}
