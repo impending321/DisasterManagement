@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NDMA India</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="HomePageCSS.css">
 </head>
 
@@ -16,10 +17,11 @@
             <a class="navbar-brand" href="https://ndma.gov.in/">National Disaster Management Authority</a>
             <a class="navbar-brand" href="https://www.india.gov.in/">Government Of INDIA</a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -39,25 +41,46 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="bg-primary text-white text-center py-5">
-        <h1>Welcome to NDMA India</h1>
-        <p>Your Trusted Partner in Disaster Management</p>
-        <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+        
+    <!-- Hero Section with Image Slider -->
+    <section id="hero">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\Slider-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images\Slider-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images\Slider-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
+        <!-- Alert Slider Section -->
+        <section id="alerts" class="bg-danger text-white py-3" style="height: fit-content;">
+            <div class="container" style="overflow: hidden;">
+                <div id="alert-slider" class="alert-slider" style="font-size:xx-large;">
+                </div>
+            </div>
+        </section>
 
     <!-- About Section -->
     <section id="about" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>About Us</h2>
-                    <p>We are the National Disaster Management Authority (NDMA) of India, dedicated to disaster risk reduction and emergency response.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="about-image.jpg" alt="About NDMA India" class="img-fluid">
-                </div>
+        <div class="card text-bg-dark">
+            <img src="images\NDMA-banner.jpg" class="card-img" alt="NDMA banner">
+            <div class="card-img-overlay">
+                <h2 class="card-title">Our Vision</h2>
+                <p class="card-text">“To build a safer and disaster resilient India by a holistic, pro-active, technology-driven and <br>sustainable development strategy that involves all stakeholders and fosters a culture of <br> prevention, preparedness and mitigation.”</p>
             </div>
         </div>
     </section>
@@ -90,7 +113,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="service1-image.jpg" alt="Service 1" class="card-img-top">
+                        <img src="images\Drills.jpg" alt="Service 1" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Disaster Preparedness</h5>
                             <p class="card-text">We offer training and resources to help you prepare for disasters.</p>
@@ -99,19 +122,19 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="service2-image.jpg" alt="Service 2" class="card-img-top">
+                        <img src="images/game_Demo.jpg" alt="Service 2" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Emergency Response</h5>
-                            <p class="card-text">Get real-time updates and emergency contact information.</p>
+                            <h5 class="card-title">Gamified Learnings</h5>
+                            <p class="card-text">Fun & Learn what to do in emergency situtations.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="service3-image.jpg" alt="Service 3" class="card-img-top">
+                        <img src="images/past_disasters.jpg" alt="Service 3" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Recovery Assistance</h5>
-                            <p class="card-text">Learn about recovery programs and support available after disasters.</p>
+                            <h5 class="card-title">Past Disasters</h5>
+                            <p class="card-text">Know about the history of Indian Disasters.</p>
                         </div>
                     </div>
                 </div>
@@ -123,7 +146,8 @@
     <section id="resources" class="py-5">
         <div class="container">
             <h2 class="text-center">Resources</h2>
-            <p class="text-center">Explore our collection of guides, articles, and tools to stay informed and prepared.</p>
+            <p class="text-center">Explore our collection of guides, articles, and tools to stay informed and prepared.
+            </p>
             <div class="text-center">
                 <a href="#" class="btn btn-primary btn-lg">View Resources</a>
             </div>
@@ -146,34 +170,6 @@
         <p>&copy; 2023 NDMA India</p>
     </footer>
 </body>
-<script>
-    if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition( (position) =>{
-            const lat = position.coords.latitude;
-            const lon = position.coords.longitude;
-            console.log(position.coords.latitude, position.coords.longitude);
-            const apiUrl= 'http://api.openweathermap.org/geo/1.0/reverse?lat=' + lat + '&lon=' + lon + '&limit='+0+'&appid='
-            fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-            throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            const md = (data);
-            const city = md[0].name;
-            const country = md[0].state;
-            console.log(data);
-            console.log(city);
-            console.log(country);
-        })
-        .catch(error => {
-            console.error('Error fetching location data:', error);
-        });
-        });
-        } else {
-          console.log("Geolocation is not supported by this browser.");
-        }
-</script>
+<script src="HomePage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
