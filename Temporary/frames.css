@@ -1,0 +1,28 @@
+body{
+    overflow-x: hidden;
+        background-color:#30475E;
+    
+}
+
+.Text{
+    font-size: 24px;
+    color:#DDDDDD;
+    background-color: #222831;
+    height:100%;
+    width: 670px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-right: -10%;
+}
+.title{
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction:row;
+}
+.video{
+    position: absolute;
+    margin-left: 201px;
+    left: 41%;
+}
