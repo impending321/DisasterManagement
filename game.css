@@ -1,112 +1,112 @@
 
 body {
-    background-color: black;
-    background-image: url('/gameNeeds/bg.jpg');
-    background-size: cover ;
+    margin: 0;
+    padding: 0;
+    background-image: url('./gameNeeds/bg.jpg');
+    background-size:cover;
     background-repeat: no-repeat;
+}
+.bg{
+    z-index: 0;
+}
+.bg img{
+    display: block;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw
+
 }
 .cupboardClosed {
     position: absolute;
-    margin-left: 35%;
-    margin-top: 3%;
+    left: 35%;
+    top: 7%;
 
 }
 
 .cupBoard {
     display: none;
     position: absolute;
-    margin-left: 35%;
-    margin-top: 3%;
-
+    left: 35%;
+    top: 7%;
+}
+.cupBoard img{
+    height:100%;
 }
 
 .firstAid {
     z-index: 1;
     position: absolute;
-    margin-left: 23%;
-    margin-top: -4%;
-    /* transition: 5s; */
+    top:50%;
+    left:22%;
+
 }
 .rope{
     z-index: 1;
     position:absolute;
-    margin-left: 64%;
-    margin-top: 1%;
+    top:52%;
+    left:66%;
 }
 .flashLight{
+    top:68%;
+    left:69%;    
     z-index: 1;
     position:absolute;
-    margin-left: 64%;
-    margin-top: 20%;
 }
 .bottle{
+    top:65%;
+    left:12%;
     z-index: 1;
     position:absolute;
-    margin-left: 9%;
-    margin-top: 15%;
 }
 
 .firstAid img {
-    /* position: relative; */
     height: 100px;
     width: 200px;
-    margin-top: -500px;
 
 }
 .rope img{
     height: 100px;
-    margin-top:-500px;
 }
 .flashLight img{
     height: 100px;
-    margin-top:-500px; 
 
 }
 .bottle img{
     height: 100px;
-    margin-top:-500px; 
 
-}
-.tray{
-    position:absolute;
-    top:87%;
-    margin-left:-0%;
-    
 }
 .clothes{
     position:absolute;
     top:31%;
-    margin-left:4%;  
+    left:15%;
 }
 .phone{
     position: absolute;
     top:80%;
-    margin-left:6%;
+    left:66%;
 }
 .money{
     position: absolute;
-    top:36%;
-    margin-left:68%;
+    top:37%;
+    left:69%;
 
 }
 .console{
-    z-index: 20;
     position: absolute;
-    top:85%;
-    left:68%;
+    top:83%;
+    left:10%;
 
 }
-.tray img{
-    width:400px;
-}
 .clothes img{
-    width: 200px;
+    position: absolute;
+    height: 120px;
 }
 .money img{
-    width: 100px;
+    position: absolute;
+    height: 70px;
 }
 .console img{
-    width: 100px;
+    height: 80px;
 }
 .phone img{
     height: 100px;
@@ -122,7 +122,7 @@ button.RemoveBgButton{
     position: absolute;
     top:30%;
     left:5%;
-    height: 40%;
+    height: 50%;
 }
 .finalScore1{
 position: absolute;
@@ -132,7 +132,7 @@ width: 1000px;
 margin-left: 70%;
 margin-top: 7%;
 background-color: rgb(214, 197, 197);
-height: 20%;
+height: 35%;
 width: 12%;
 border-radius: 10px;
 box-shadow:10px 10px rgb(50, 54, 76);
@@ -156,7 +156,7 @@ box-shadow:10px 10px rgb(50, 54, 76);
   background-color: #fee6e3;
   border: 2px solid #111;
   border-radius: 8px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: #111;
   cursor: pointer;
   display: flex;
@@ -170,12 +170,13 @@ box-shadow:10px 10px rgb(50, 54, 76);
   position: relative;
   text-align: center;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  /* user-select: none;
+  -webkit-user-select: none; */
+  /* touch-action: manipulation; */
 }
 
 .scoreBoard:after {
+  transform: translate(0, 0);
   background-color: #111;
   border-radius: 8px;
   content: "";
@@ -188,10 +189,6 @@ box-shadow:10px 10px rgb(50, 54, 76);
   transform: translate(8px, 8px);
   transition: transform .2s ease-out;
   z-index: -1;
-}
-
-.scoreBoard:hover:after {
-  transform: translate(0, 0);
 }
 
 .scoreBoard:active {
@@ -207,4 +204,21 @@ box-shadow:10px 10px rgb(50, 54, 76);
   .scoreBoard {
     padding: 0 40px;
   }
+}
+.storage{
+    height: 30%;
+    position: absolute;
+    top: 69%;
+    left:-100%;
+
+}
+.storage img{
+    height:100%;
+}
+.alert-info{
+    padding: 6px;
+}
+.btn{
+    padding: 5px;
+
 }

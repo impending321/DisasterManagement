@@ -1,14 +1,14 @@
 var score=0
 var count=0
-function change(elementClass){    
+function change(elementClass){   
     score=score+1; 
     var element3=document.getElementsByClassName("scoreBoard");
     element3[0].innerHTML="Score "+score
     console.log("Working fine")
     var element=document.getElementsByClassName(elementClass)
     console.log(element)
-    element[0].style.marginLeft="32%";
-    element[0].style.marginTop="60%";
+    element[0].style.left="-90%";
+    element[0].style.top="64%";
     element[0].style.transition="3s"
     var audio1=new Audio("click.mpeg");
     audio1.play();    
@@ -33,8 +33,8 @@ function openDoor(element1Class,element2Class,element3Class){
 }
 function displayScore(elementClass){
     var tempElement=document.getElementsByClassName(elementClass);
-    tempElement[0].style.marginLeft="32%";
-    tempElement[0].style.marginTop="60%";
+    tempElement[0].style.left="32%";
+    tempElement[0].style.top="60%";
     tempElement[0].style.transition="3s"
     var audio2=new Audio("end.mpeg");
     audio2.play()
@@ -46,21 +46,21 @@ function displayScore(elementClass){
     var rope=document.getElementsByClassName("rope");
     var firstAid=document.getElementsByClassName("firstAid");
     var torch=document.getElementsByClassName("flashLight");
-    bottle[0].style.marginLeft="9%";
-    bottle[0].style.marginTop="15%";
+    bottle[0].style.left="12%";
+    bottle[0].style.top="65%";
     bottle[0].style.transition="5s";
-    rope[0].style.marginLeft="64%";
-    rope[0].style.marginTop="1%";
+    rope[0].style.left="66%";
+    rope[0].style.top="52%";
     rope[0].style.transition="5s";
-    firstAid[0].style.marginLeft="23%";
-    firstAid[0].style.marginTop="-4%";
+    firstAid[0].style.left="22%";
+    firstAid[0].style.top="50%";
     firstAid[0].style.transition="5s";
-    torch[0].style.marginLeft="64%";
-    torch[0].style.marginTop="20%";
+    torch[0].style.left="69%";
+    torch[0].style.top="69%";
     torch[0].style.transition="5s";
     score=0
     var alert=document.getElementsByClassName("alert")
-    alert[0].innerHTML="Click Next For Next Level  <button type='button'  class='btn btn-secondary'>Next!</button>"
+    alert[0].innerHTML="Yay! You Passed Round 1 Click Next For Next Level  <button  type='button'  class='btn btn-secondary'>Next!</button>"
 }
 
 function wrong(){
@@ -68,17 +68,17 @@ function wrong(){
     var rope=document.getElementsByClassName("rope");
     var firstAid=document.getElementsByClassName("firstAid");
     var torch=document.getElementsByClassName("flashLight");
-    bottle[0].style.marginLeft="9%";
-    bottle[0].style.marginTop="15%";
+    bottle[0].style.left="12%";
+    bottle[0].style.top="65%";
     bottle[0].style.transition="5s";
-    rope[0].style.marginLeft="64%";
-    rope[0].style.marginTop="1%";
+    rope[0].style.left="66%";
+    rope[0].style.top="52%";
     rope[0].style.transition="5s";
-    firstAid[0].style.marginLeft="23%";
-    firstAid[0].style.marginTop="-4%";
+    firstAid[0].style.left="22%";
+    firstAid[0].style.top="50%";
     firstAid[0].style.transition="5s";
-    torch[0].style.marginLeft="64%";
-    torch[0].style.marginTop="20%";
+    torch[0].style.left="69%";
+    torch[0].style.top="69%";
     torch[0].style.transition="5s";
     score=0
     var element3=document.getElementsByClassName("scoreBoard");
