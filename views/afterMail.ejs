@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Mail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="afterMail.css">
+</head>
+
+<body>
+    
+
+    <div class="email-container">
+        <div class="email-subject">Important Announcement</div>
+        <div class="email-content">
+            Dear citizen,
+
+            We hope this message finds you in good health and spirits. As part of our ongoing efforts to enhance
+            disaster preparedness and response within our community, we are pleased to invite you to participate in an
+            upcoming Disaster Mock Training Exercise organized by [Government Department/Agency Name] for <%= drillType%>. <br><br>
+
+            Date: <%= date %> <br>
+            Location: <%= district %> <br><br>
+
+            Purpose of the Training: <br>
+            The Disaster Mock Training Exercise is designed to simulate a real-life disaster scenario, allowing
+            participants to:
+
+            Practice effective emergency response procedures.
+            Enhance coordination and communication among various response agencies.
+            Evaluate and improve our community's preparedness for disasters.
+        </div>
+        <div class="email-sender">
+            From: notifications@example.com<br>
+            Date: <%= sendingDate %>
+        </div>
+        <button type="button" class="btn btn-secondary">Send</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,11 +1,14 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .weather-container {
-    height: 700px;
+    height: 450px;
     width: 100%;
     border-radius: 5px;
     background-image: url("/assets/white-cloud-blue-sky.jpg");
     display: grid;
-    grid-template-rows: .25fr 2fr 1fr 1.5fr;
+    grid-template-rows: .2fr 1.5fr 1fr ;
     padding: 10px;
     gap: 5px;
 }
@@ -17,7 +20,20 @@
     border-radius: 2px;
     outline: none;
 }
+.weather-1-card-body{
+    /* display: flex; */
+}
+.weather-1-card-body img{
+    height: 80px;
+    width: 80px;
 
+}
+#box2 p{
+    font-size: 25px;
+}
+.weather-1-card-body p{
+    color: aliceblue;
+}
 .weather-box {
     background-color: transparent;
     border: 2px solid white;
@@ -32,19 +48,22 @@
     gap: 0px 5px;
 }
 
-.weather-2::-webkit-scrollbar {
-    width: 10px;
+.notification-container::-webkit-scrollbar,.weather-2::-webkit-scrollbar {
+    height: 10px;
 }
 
-.weather-2::-webkit-scrollbar-track {
+.notification-container::-webkit-scrollbar,.weather-2::-webkit-scrollbar-track {
     background: white;
+    width: 5px;
 }
 
-.weather-2::-webkit-scrollbar-thumb {
+.notification-container::-webkit-scrollbar,.weather-2::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    
 }
 
-.weather-2::-webkit-scrollbar-thumb:hover {
+.notification-container::-webkit-scrollbar,.weather-2::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.75);
 }
 

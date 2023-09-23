@@ -13,8 +13,21 @@ app.listen(3000, function () {
 })
 
 app.get("/", function (req, res) {
-    res.render('HomePage');
+    res.sendFile(__dirname + '/HomePage.html');
 });
+app.get("/pages/login.html", function (req, res) {
+    res.sendFile(__dirname + "/pages/login.html");
+})
+app.get("/pages/signup.html", function (req, res) {
+    res.sendFile(__dirname + "/pages/signup.html");
+})
+
+app.get("/pages/Dos&Donts.html", function (req, res) {
+    res.sendFile(__dirname + "/pages/Dos&Donts.html");
+})
+app.get("/pages/game.html", function (req, res) {
+    res.sendFile(__dirname + "/pages/game.html");
+})
 
 // POST and GET have separate res.send or res.sendFile;
 
@@ -59,14 +72,16 @@ app.post("/", function (req, res) {
             // there can be multiple res.write in a file. 
             // after writing everything we can send the file.
 
-            res.write("<p> The wether currently is :  " + weatherDiscription + "</p>");
 
-            res.render('HomePage',{
-                i: weatherDescription
+            res.render('weather', {
+                temp: temp,
+                weatherDescription: weatherDescription,
+                weatherImage: iconURL
             });
-            res.write("<img src=" + iconURL + " >");
-            res.write("<h1> The tenmp is : " + temp + "</h1>");
-            res.send();
+            // res.write("<p> The wether currently is :  " + weatherDescription + "</p>");
+            // res.write("<img src=" + iconURL + " >");
+            // res.write("<h1> The tenmp is : " + temp + "</h1>");
+            // res.send();
 
             // document.querySelector(".weather-1").innerHTML = "<img src=" + iconURL + " >";
             // res.sendFile(__dirname+"/HomePage.html");

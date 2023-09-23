@@ -5,6 +5,7 @@ body {
 /* Navigation Bar */
 
 .navbar {
+    z-index: 1000;
     background-color: #1976D2;
     /* NDMA blue color */
 }
@@ -56,7 +57,7 @@ body {
 
 .notification-container {
     width: 100%; /* Set the desired width for your container */
-    height: 700px; /* Set the desired height for your container */
+    height: 450px; /* Set the desired height for your container */
     overflow-y: scroll; /* Enable vertical scroll when content overflows */
     border: 1px solid #ccc;
     padding: 10px;
@@ -76,8 +77,13 @@ body {
 
 #services {
     padding: 50px 0;
+    
 }
-
+#services a{
+    z-index: 100;
+    text-decoration: none;
+    color: black;
+}
 #services h2 {
     font-size: 2rem;
     margin-bottom: 30px;
@@ -159,6 +165,7 @@ footer {
 
 #middle-section {
     background-image: url("/assets/Drills.jpg");
+    height: 550px;
 }
 
 #box1 {
@@ -214,4 +221,24 @@ footer {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.sos{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 1;
+    flex-direction: column;
+    
+}
+.sos a{
+    margin: 5px;
+}
+.sos a img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
