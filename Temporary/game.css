@@ -1,0 +1,224 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/bg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.bg{
+    z-index: 0;
+}
+.bg img{
+    display: block;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw
+
+}
+.cupboardClosed {
+    position: absolute;
+    left: 35%;
+    top: 7%;
+
+}
+
+.cupBoard {
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 7%;
+}
+.cupBoard img{
+    height:100%;
+}
+
+.firstAid {
+    z-index: 1;
+    position: absolute;
+    top:50%;
+    left:22%;
+
+}
+.rope{
+    z-index: 1;
+    position:absolute;
+    top:52%;
+    left:66%;
+}
+.flashLight{
+    top:68%;
+    left:69%;    
+    z-index: 1;
+    position:absolute;
+}
+.bottle{
+    top:65%;
+    left:12%;
+    z-index: 1;
+    position:absolute;
+}
+
+.firstAid img {
+    height: 100px;
+    width: 200px;
+
+}
+.rope img{
+    height: 100px;
+}
+.flashLight img{
+    height: 100px;
+
+}
+.bottle img{
+    height: 100px;
+
+}
+.clothes{
+    position:absolute;
+    top:31%;
+    left:15%;
+}
+.phone{
+    position: absolute;
+    top:80%;
+    left:66%;
+}
+.money{
+    position: absolute;
+    top:37%;
+    left:69%;
+
+}
+.console{
+    position: absolute;
+    top:83%;
+    left:10%;
+
+}
+.clothes img{
+    position: absolute;
+    height: 120px;
+}
+.money img{
+    position: absolute;
+    height: 70px;
+}
+.console img{
+    height: 80px;
+}
+.phone img{
+    height: 100px;
+}
+
+button.RemoveBgButton{
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.scoreBoard{
+    position: absolute;
+    top:30%;
+    left:5%;
+    height: 50%;
+}
+.finalScore1{
+position: absolute;
+z-index: 5;
+display: none;
+width: 1000px;
+margin-left: 70%;
+margin-top: 7%;
+background-color: rgb(214, 197, 197);
+height: 35%;
+width: 12%;
+border-radius: 10px;
+box-shadow:10px 10px rgb(50, 54, 76);
+
+
+}
+.finalScore1Text{
+    position: absolute;
+    display: block;
+    font-size: 200%;
+    margin-left: 11%;
+    margin-top: 2%;
+
+}
+.finalScore1 img{
+    /* top:1%; */
+    width:100%;
+}
+.scoreBoard {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  /* box-sizing: border-box; */
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  /* user-select: none;
+  -webkit-user-select: none; */
+  /* touch-action: manipulation; */
+}
+
+.scoreBoard:after {
+  transform: translate(0, 0);
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.scoreBoard:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.scoreBoard:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .scoreBoard {
+    padding: 0 40px;
+  }
+}
+.storage{
+    height: 30%;
+    position: absolute;
+    top: 69%;
+    left:-100%;
+
+}
+.storage img{
+    height:100%;
+}
+.alert-info{
+    padding: 6px;
+}
+.btn{
+    padding: 5px;
+
+}

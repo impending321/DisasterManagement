@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-image: url('./gameNeeds/bg.jpg');
     background-size:cover;
+
     background-repeat: no-repeat;
 }
 .bg{
