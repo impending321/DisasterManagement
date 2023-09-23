@@ -29,63 +29,46 @@ app.get("/pages/game.html", function (req, res) {
     res.sendFile(__dirname + "/pages/game.html");
 })
 
+app.get("/admin", function (req, res) {
+    res.sendFile(__dirname + "/pages/adminPage.html");
+})
+
+app.post("/admin", function (req, res) {
+
+    var state = req.body.state;
+    var district = req.body.district;
+    var drillType = req.body.drillType;
+    var givenDate = req.body.date;
+
+    var date = new Date(givenDate);
+    var Location = district + "," + state;
+
+    var currentDate = new Date();
+    var sendingDate = currentDate.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+
+    const formattedDate = date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+
+    console.log(formattedDate);
+
+    res.render('afterMail.ejs', {
+        drillType:drillType,
+        date: formattedDate,
+        district: Location,
+        sendingDate: sendingDate
+    });
+    // app.get('/home' , function(req , res){
+    //     res.sendFile('C:\Users\admin\Documents\GitHub\DisasterManagement\HomePage.html');
+    // })
+})
+
 // POST and GET have separate res.send or res.sendFile;
 
-
-app.post("/", function (req, res) {
-
-    const query = req.body.location;
-    const apiKey =
-        "d00d86661cfbb10af358e0b5c23cec53";
-    const unit = "metric";
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit;
-
-    console.log(query);
-
-    https.get(url, function (response) {
-
-        // console.log(response);
-        console.log(response.statusCode);
-
-        // .on means on receiving data .
-        response.on("data", function (data) {
-            // console.log(data);
-            const weatherData = JSON.parse(data);
-
-            // here the data we get is stored as the actual data to be used if form of js object with key value pairs.
-            // console.log(weatherData);
-
-            // const textForm = JSON.stringify(weatherData);
-            // here data in converted into the form in which it is transfeered or sent if the form of minified strings with correct notations and symbolds to convert back to JSON.
-            // console.log(textForm);
-
-            const temp = weatherData.main.temp;
-            const weatherDescription = weatherData.weather[0].description;
-            const iconId = weatherData.weather[0].icon;
-            const iconURL = "https:openweathermap.org/img/wn/" + iconId + "@2x.png"
-
-            // res.send("<h1>The temp is : " + temp + "degree Celcius</h1> <h1>The Weather currently is : " + weatherDiscription + "</h1>");
-            // res.send can be only once in entirfe file.
-
-            // OR
-
-            // there can be multiple res.write in a file. 
-            // after writing everything we can send the file.
-
-
-            res.render('weather', {
-                temp: temp,
-                weatherDescription: weatherDescription,
-                weatherImage: iconURL
-            });
-            // res.write("<p> The wether currently is :  " + weatherDescription + "</p>");
-            // res.write("<img src=" + iconURL + " >");
-            // res.write("<h1> The tenmp is : " + temp + "</h1>");
-            // res.send();
-
-            // document.querySelector(".weather-1").innerHTML = "<img src=" + iconURL + " >";
-            // res.sendFile(__dirname+"/HomePage.html");
-        });
-    });
-});
 

@@ -10,11 +10,8 @@ app.set("view engine", "ejs");
 const backendData = { message: 'Hello from the backend!' };
 
 // Define a route that sends the data to the frontend
-app.get('/api/data/jay', (req, res) => {
-  res.json(backendData);
-});
 
-app.get("/", function (req, res) {
+app.get("/admin", function (req, res) {
     res.sendFile(__dirname + "/adminPage.html");
 })
 app.post("/", function (req, res) {
