@@ -30,7 +30,7 @@ app.get("/pages/game.html", function (req, res) {
 })
 
 app.get("/admin", function (req, res) {
-    res.sendFile(__dirname + "/pages/adminPage.html");
+    res.sendFile(__dirname + "/adminPage.html");
 })
 
 app.post("/", function (req, res) {
