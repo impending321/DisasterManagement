@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/HomePageCSS.css">
-<<<<<<< HEAD
 </head>
 
 <body>
@@ -18,14 +17,6 @@
         <a href="https://www.instagram.com/ndmaindia/"><img src="/assets/instagram.webp" alt=""></a>
     </div>
 
-=======
-    <link rel="stylesheet" href="/css/map.css">
-    <link rel="stylesheet" href="/css/weather.css">
-</head>
-
-<body>
-    <!-- Navigation Bar -->
->>>>>>> 63c0586cd02d7d6d2f6f5a12549a59e24d5c108a
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <img src="https://ndma.gov.in/sites/default/files/emblem-dark.png" alt="NDMA emblem" class="navbar-img">
         <div>
@@ -51,21 +42,14 @@
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-<<<<<<< HEAD
                     <a class="nav-link" href="/pages/login.html">Log In</a>
-=======
-                    <a class="nav-link" href="LoginSignUp\login.html">Log In</a>
->>>>>>> 63c0586cd02d7d6d2f6f5a12549a59e24d5c108a
                 </li>
             </ul>
         </div>
     </nav>
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 63c0586cd02d7d6d2f6f5a12549a59e24d5c108a
     <!-- Hero Section with Image Slider -->
     <section id="hero">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -93,19 +77,11 @@
         </div>
     </section>
 
-<<<<<<< HEAD
 
     <!-- Alert Slider Section -->
     <!-- <section id="alerts" class="bg-danger text-white py-0" style="height: fit-content;">
         <div class="container" style="overflow: hidden;">
             <div id="alert-slider" class="alert-slider" >
-=======
-    <div> <%= i%> </div>
-    <!-- Alert Slider Section -->
-    <!-- <section id="alerts" class="bg-danger text-white py-0" style="height: fit-content;">
-        <div class="container" style="overflow: hidden;">
-            <div id="alert-slider" class="alert-slider">
->>>>>>> 63c0586cd02d7d6d2f6f5a12549a59e24d5c108a
             </div>
         </div>
     </section> -->
@@ -124,48 +100,8 @@
         </div>
     </section>
 
-<<<<<<< HEAD
 
 
-=======
-    
-    <script>
-    async function fetchDataFromServer() {
-  try {
-    const response = await fetch("https://api/data/jay");
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("Fetch error:", error);
-    throw error; // Re-throw the error for further handling
-  }
-}
-// Get a reference to the data section in your HTML
-const dataSection = document.getElementById("data-section");
-
-// Fetch data from the server
-fetchDataFromServer()
-  .then((data) => {
-    // Use forEach to loop through the data array
-    data.forEach((item) => {
-      // Create a new element to display each item
-      const itemElement = document.createElement("div");
-      itemElement.textContent = item; // Assuming each item is a string
-
-      // Append the item element to the data section
-      dataSection.appendChild(itemElement);
-    });
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
-
-
-    </script>
->>>>>>> 63c0586cd02d7d6d2f6f5a12549a59e24d5c108a
 
     <section id="middle-section" class="py-5">
         <div class="container">
@@ -173,7 +109,6 @@ fetchDataFromServer()
                 <!-- First Box: 65% width -->
                 <div class="col-lg-6 mb-1">
                     <div id="box1" class="p-1">
-<<<<<<< HEAD
                         <div class="notification-container" id="data-section">
                             <p style="border: solid black 2px;" class="notification">Lorem ipsum dolor sit amet
                                 consectetur adipisicing
@@ -205,66 +140,6 @@ fetchDataFromServer()
                                 elit. Explicabo, repellendus! Dicta tenetur cum sit quidem, accusantium distinctio
                                 fuga, enim, reprehenderit ad fugit voluptas possimus cumque obcaecati accusamus!
                                 Distinctio, non rem.</p>
-=======
-                            <div class="notification-container" id="data-section">
-                                <p style="border: solid black 2px;" class="notification">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Molestiae hic odit natus culpa suscipit! Beatae accusamus maiores hic, libero
-                                    mollitia exercitationem provident voluptatem dicta reiciendis? Veritatis quae
-                                    corporis architecto nulla!</p>
-                                <p style="border: solid black 2px;" class="notification">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Vero explicabo sed commodi maiores veritatis recusandae animi blanditiis
-                                    quisquam est nihil aliquam, architecto repellat vel nisi iusto dignissimos hic porro
-                                    amet!</p>
-                                <p style="border: solid black 2px;" class="notification">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Explicabo, repellendus! Dicta tenetur cum sit quidem, accusantium distinctio
-                                    fuga, enim, reprehenderit ad fugit voluptas possimus cumque obcaecati accusamus!
-                                    Distinctio, non rem.</p>
-                                <p style="border: solid black 2px;" class="notification">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Molestiae hic odit natus culpa suscipit! Beatae accusamus maiores hic, libero
-                                    mollitia exercitationem provident voluptatem dicta reiciendis? Veritatis quae
-                                    corporis architecto nulla!</p>
-                                <p style="border: solid black 2px;" class="notification">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Vero explicabo sed commodi maiores veritatis recusandae animi blanditiis
-                                    quisquam est nihil aliquam, architecto repellat vel nisi iusto dignissimos hic porro
-                                    amet!</p>
-                                <p style="border: solid black 2px;" class="notification">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Explicabo, repellendus! Dicta tenetur cum sit quidem, accusantium distinctio
-                                    fuga, enim, reprehenderit ad fugit voluptas possimus cumque obcaecati accusamus!
-                                    Distinctio, non rem.</p>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Second Box: 30% width -->
-                <div class="col-lg-4 ms-auto">
-                    <div id="box2" class="p-1">
-                        <div class="weather-container">
-                            <form action="/" method="post">
-                                <img src="/images/location-icon-for-input.png">
-                                <input type="text" name="location" id="location-input">
-                            </form>
-                            <div class="card weather-box weather-1">
-                                <div class="card-body">
-                                    <p>The weather currently is    </p>
-                                </div>
-                            </div>
-
-                            <div class="card weather-box weather-2">
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                                <div class="hour-forcast"></div>
-                            </div>
-
-                            <div class="card weather-box weather-3">
-                                <div class="card-body"></div>
-                            </div>
->>>>>>> 63c0586cd02d7d6d2f6f5a12549a59e24d5c108a
                         </div>
                     </div>
                 </div>
