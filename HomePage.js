@@ -32,10 +32,29 @@ function fetchEarthquakeAlerts() {
 // For demonstration, you can use sample data
 const sampleAlerts = [
 "Magnitude 5.0 earthquake in California",
-"Magnitude 4.2 earthquake in Japan",
-"Magnitude 6.1 earthquake in Chile",
+"Magnitude 4.2 earthquake in Japan"
 // Add more alerts as needed
 ];
+
+function fetchData() {
+    fetch("https://sachet.ndma.gov.in/cap_public_website/FetchAllAlertDetails")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // Process and use the data here
+        console.log(data[0].disaster_type);
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
+  }
+
+  fetchData();
 
 // Get the alert-slider element
 const alertSlider = document.getElementById("alert-slider");
