@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the larger email container div */
+.email-container {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px; /* Increase padding for more space */
+    width: 500px; /* Increase width for a larger box */
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Increase box shadow for depth */
+}
+
+/* Style for the email subject */
+.email-subject {
+    font-weight: bold;
+    font-size: 24px; /* Increase font size for subject */
+    margin-bottom: 20px; /* Increase margin for separation */
+}
+
+/* Style for the email content */
+.email-content {
+    font-size: 18px; /* Increase font size for content */
+}
+
+/* Style for the sender's information */
+.email-sender {
+    font-size: 14px; /* Increase font size for sender info */
+    color: #666;
+}
+
+button{
+    margin-left: 90%;
+}

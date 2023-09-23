@@ -5,17 +5,20 @@ body {
 /* Navigation Bar */
 
 .navbar {
-    background-color: #1976D2; /* NDMA blue color */
+    background-color: #1976D2;
+    /* NDMA blue color */
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
-.navbar-img{
+
+.navbar-img {
     height: 80px;
     width: 80px;
 }
-.navbar-brand{
+
+.navbar-brand {
     margin-left: 10px;
     display: block;
 }
@@ -41,11 +44,12 @@ body {
     color: #000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#about p{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+#about p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #000;
     font-size: xx-large;
-    font-style:italic;
+    font-style: italic;
 }
 
 
@@ -128,7 +132,7 @@ body {
 /* Footer */
 
 footer {
-    background-color: #333; 
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -136,11 +140,11 @@ footer {
 
 /* Box 1 */
 
-#middle-section{
+#middle-section {
     background-image: url("./images/Drills.jpg");
 }
 
-#box1 { 
+#box1 {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -174,18 +178,23 @@ footer {
 }
 
 .alert-slider {
+    font-size: 20px;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     animation: scroll-left 20s linear infinite;
 }
 
+.alert-dismissible {
+    padding: 0;
+}
+
 @keyframes scroll-left {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }
 }
-
