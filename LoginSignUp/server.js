@@ -13,16 +13,13 @@ mongoose.connect('mongodb+srv://i_m_impending:anshabhi@signup.obtcf7l.mongodb.ne
 
 // Define a User schema
 const userSchema = new mongoose.Schema({
-    name: {
-        type: mongoose.Schema.Types.String,
-        required: [true, "name is a requied field!"],
-      },
+  name: String,
   email: String,
   phone: String,
   password: String,
-  state: String,
-  district: String,
-  userType: String,
+//   state: String,
+//   district: String,
+//   userType: String,
 });
 
 const User = mongoose.model('User', userSchema);
@@ -42,18 +39,15 @@ app.get("/", (req, res) => {
 app.post('/', async (req, res) => {
   try {
     // Extract form data from the request
-    console.log('req.body: ', req.body.name);
-    const { name, email, phone, password, state, district, userType } = req.body;
+    console.log('req.body: ', req.body);
+    const { name, email, phone, password} = req.body;
 
     // Create a new user document
-    const newUser = new User({ 
-      name,
-      email,
-      phone,
-      password,
-      state,
-      district,
-      userType
+    const newUser = new User({
+        name, 
+        email,
+        phone,
+        password,
     });
 
     // Save the user document to MongoDB using async/await
