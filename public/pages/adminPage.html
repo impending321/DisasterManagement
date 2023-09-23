@@ -66,7 +66,7 @@
         <input type="date" id="date" name="date" required>
       </div>
       <div>
-        <button value="Submit">
+        <input id="contact-form" type="submit" value="Send Email">Send Mail</button>
       </div>
     </form>
   </div>
@@ -180,71 +180,50 @@
 
     updateDistricts();
   </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
+  <script src="https://cdn.emailjs.com/sdk/2.6.3/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
   </script>
   <script type="text/javascript">
+    (function () {
+      emailjs.init("UGHRbYvfxl394XFed"); //please encrypted user id for malicious attacks
+    })();
+
     user = [
       {
-        name: 'Mayank Kumar',
+        name: "Mayank Kumar",
         email: "12216017@nitkkr.ac.in",
-        state: "haryana",
-        district: "rewari"
+        location: "rewari"
       },
       {
-        name: 'Mayank Kumar',
-        email: "12216017@nitkkr.ac.in",
-        state: "haryana",
-        district: "rewari"
+        name:"Vinay Dhankhar",
+        email: "12212118@nitkkr.ac.in",
+        location: "haryana"
       },
       {
-        name: 'Mayank Kumar',
-        email: "12216017@nitkkr.ac.in",
-        state: "haryana",
-        district: "rewari"
-      },
-      {
-        name: 'Mayank Kumar',
-        email: "12216017@nitkkr.ac.in",
-        state: "haryana",
-        district: "rewari"
-      },
-      {
-        name: 'Mayank Kumar',
-        email: "12216017@nitkkr.ac.in",
-        state: "haryana",
-        district: "rewari"
-      },
-
-    ]
-    document.getElementById('contactForm').addEventListener('onclick', function (event)) {
-      event.preventDefault(); // Prevent the form from submitting the traditional way
-
-      // Initialize EmailJS with your User ID
-      emailjs.init('UGHRbYvfxl394XFed'); // Replace YOUR_USER_ID with your actual User ID
-
-
-      var email = document.getElementById('email').value;
-      var message = document.getElementById('message').value;
-
-
-      for (i = 0, i < user.length; i++) {
-        // Send the email using EmailJS
-        emailjs.send('service_t4p8gtm', 'template_5cgw8r9', {
-          from_email: user[i].email,
-          location = state + district,
-          message_html: message
-        })
-          .then(function (response) {
-            alert('Email sent successfully!');
-            document.getElementById('contactForm').reset(); // Reset the form after successful submission
-          }, function (error) {
-            alert('Error sending email. Please try again later.');
-            console.error('Error:', error);
-          });
-      });
+        name:"ansh Varshnay",
+        email: "12212075@nitkkr.ac.in",
+        location:"meerut"
       }
-  </script>
+    ]
+    for (i = 0; i < user.length; i++) {
+      //set the parameter as per you template parameter[https://dashboard.emailjs.com/templates]
+      var templateParams = {
+        to_email: user[i].email,
+        from_name: 'abc',
+        location: user[i].location,
+        drill_type: document.getElementById("drillType").value,
+        message_html: 'Please Find out the attached file'
+      };
 
+      emailjs.send('service_t4p8gtm', 'template_4s8nu4n', templateParams)
+        .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+          console.log('FAILED...', error);
+        });
+    }
+  </script>
 </body>
 
 </html>
