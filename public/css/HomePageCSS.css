@@ -24,9 +24,19 @@ body {
     display: block;
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-color: #fff;
+.navbar .collapse ul li {
+    margin-right: 15px;
 }
+.navbar .collapse ul li .nav-link {
+    transition: 0.2s transform;
+    font-size: 1.2rem;
+} 
+
+.navbar .collapse ul li .nav-link:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+} 
+
 
 /* Hero Section */
 
@@ -36,22 +46,34 @@ body {
 
 #about {
     padding: 50px 0;
-    color: #000;
+    color: #fff;
 }
 
 #about h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 20px;
-    color: #000;
+    color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #about p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #000;
-    font-size: xx-large;
+    color: #fff;
+    font-size: 1.5rem;
     font-style: italic;
 }
+
+.weather-container form img {
+    transform: scale(0.8);
+}
+
+.weather-container form {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+}
+
+
 
 
 
@@ -128,6 +150,12 @@ body {
     font-size: 1.25rem;
     padding: 10px 20px;
     border-radius: 5px;
+    border: 2px solid #007bff;
+}
+
+#resources .btn:hover {
+    background-color: #ffffff;
+    color: #007bff;
 }
 
 /* Contact Section */
@@ -150,8 +178,25 @@ body {
     font-size: 1.25rem;
     padding: 10px 20px;
     border-radius: 5px;
+    border: 2px solid #ffffff;
+    color: #333;
 }
 
+#contact .btn:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+#services .container .row div .card {
+    cursor: pointer;
+    transition: 0.3s transform;
+    height: 350px;
+}
+
+
+#services .container .row div .card:hover {
+    transform: scale(1.1)
+}
 /* Footer */
 
 footer {
