@@ -33,8 +33,8 @@ app.get("/admin", function (req, res) {
     res.sendFile(__dirname + "/pages/adminPage.html");
 })
 
-app.post("/admin", function (req, res) {
-
+app.post("/", function (req, res) {
+    console.log("redirected");
     var state = req.body.state;
     var district = req.body.district;
     var drillType = req.body.drillType;
@@ -58,7 +58,7 @@ app.post("/admin", function (req, res) {
 
     console.log(formattedDate);
 
-    res.render('afterMail.ejs', {
+    res.render(__dirname + '/afterMail.ejs', {
         drillType:drillType,
         date: formattedDate,
         district: Location,

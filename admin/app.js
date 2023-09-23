@@ -39,7 +39,7 @@ app.post("/", function (req, res) {
 
     console.log(formattedDate);
 
-    res.render('afterMail.ejs', {
+    res.render(__dirname + '/afterMail.ejs', {
         drillType:drillType,
         date: formattedDate,
         district: Location,
