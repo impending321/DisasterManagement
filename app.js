@@ -13,7 +13,7 @@ app.listen(3000, function () {
 })
 
 app.get("/", function (req, res) {
-    res.render('HomePage');
+    res.sendFile(__dirname + "/HomePage.html");
 });
 
 // POST and GET have separate res.send or res.sendFile;
@@ -61,9 +61,6 @@ app.post("/", function (req, res) {
 
             res.write("<p> The wether currently is :  " + weatherDiscription + "</p>");
 
-            res.render('HomePage',{
-                i: weatherDescription
-            });
             res.write("<img src=" + iconURL + " >");
             res.write("<h1> The tenmp is : " + temp + "</h1>");
             res.send();
