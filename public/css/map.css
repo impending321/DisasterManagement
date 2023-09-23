@@ -1,0 +1,18 @@
+.col-lg-6{
+    margin-left: 24%;
+}
+.map-container{
+    width: 630px;
+    border-radius: 2%;
+    background-color: #4d5359;
+    border: 5px double black;
+}
+#map{
+    padding-bottom: 0;
+}
+
+#map_holder{
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 0;
+}

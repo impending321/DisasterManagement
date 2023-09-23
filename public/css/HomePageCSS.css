@@ -1,12 +1,15 @@
 body {
     font-family: Arial, sans-serif;
+    background-image: url("data:image/jpeg;base64,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");
+    background-size:cover;
+    /* background-repeat: no-repeat; */
 }
 
 /* Navigation Bar */
 
 .navbar {
-    z-index: 1000;
-    background-color: #1976D2;
+    background-color: #000000;
+    margin-bottom: 40px;
     /* NDMA blue color */
 }
 
@@ -47,6 +50,7 @@ body {
 #about {
     padding: 50px 0;
     color: #fff;
+    /* background-color: aqua; */
 }
 
 #about h2 {
@@ -86,7 +90,7 @@ body {
   }
   
   .notification {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     border: 1px solid #ddd;
     padding: 8px;
     margin-bottom: 5px;
@@ -133,7 +137,7 @@ body {
 /* Resources Section */
 
 #resources {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     padding: 50px 0;
 }
 
@@ -155,7 +159,7 @@ body {
 }
 
 #resources .btn:hover {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     color: #007bff;
 }
 
@@ -163,6 +167,7 @@ body {
 
 #contact {
     padding: 50px 0;
+    background-color: #d4d4d4;
 }
 
 #contact h2 {
@@ -180,11 +185,11 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid #ffffff;
-    color: #333;
+    color: #ffffff;
 }
 
 #contact .btn:hover {
-    background-color: #333;
+    /* background-color: #333; */
     color: #ffffff;
 }
 
@@ -201,7 +206,7 @@ body {
 /* Footer */
 
 footer {
-    background-color: #333;
+    /* background-color: #333; */
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -211,7 +216,7 @@ footer {
 
 #middle-section {
     background-image: url("/assets/Drills.jpg");
-    height: 550px;
+    background-size: cover;
 }
 
 #box1 {
@@ -268,8 +273,71 @@ footer {
         transform: translateX(-100%);
     }
 }
-
-.sos{
+.carousel-inner img{
+    height: 300px;
+    width:100%;
+}
+#hero{
+    margin-bottom: 20px
+}
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: var(--bs-card-img-overlay-padding);
+    border-radius: var(--bs-card-inner-border-radius);
+    /* background-color: rgb(105, 83, 43); */
+}
+.col-lg-6{
+    background-color: rgba(37, 65, 77, 0.7);
+    color:#e7e7e7;
+    align-items: center;
+    margin-left: 30%;
+}
+/* Card Container */
+.card {
+    border: 2px solid #ff6600; /* Orange border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Add a subtle animation effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+  }
+  
+  /* Card Title */
+  .card-title {
+    color: #ff6600; /* Orange color */
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 10px; /* Add some spacing below the title */
+  }
+  
+  /* Card Text */
+  .card-text {
+    color: #009900; /* Green color */
+    font-size: 16px; /* Font size for the description */
+  }
+  
+  /* Card Image */
+  .card-img-top {
+    border-top-left-radius: 10px; /* Rounded corners for the top-left of the image */
+    border-top-right-radius: 10px; /* Rounded corners for the top-right of the image */
+    max-height: 200px; /* Limit the maximum image height */
+  }
+  C:\Users\admin\Documents\GitHub\DisasterManagement\public\css\HomePageCSS.css
+  /* Card Body Padding */
+  .card-body {
+    padding: 20px; /* Add padding to the card body */
+  }
+  #alerts{
+    height:39px;
+  }
+  
+  .sos{
     display: flex;
     height: 100%;
     width: 100%;
